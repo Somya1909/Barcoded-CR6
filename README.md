@@ -3,7 +3,7 @@
 
 This repository contains code to reproduce analyses in the following manuscript: **"Interferons and tuft cell numbers are bottlenecks for persistent murine norovirus infection"**. 
 
-**Authors**: Somya Aggarwal<sup>1</sup>, Forrest C. Walker<sup>1</sup>, James S. Weagley<sup>1</sup>, Broc T. McCune<sup>2</sup>, Xiaofen Wu<sup>1</sup>, Lawrence A. Schriefer<sup>1</sup>, Heyde Makimaa<sup>1</sup>, Pratyush Sridhar<sup>1</sup>, Megan T. Baldridge<sup>1,3</sup>.  <sup>1</sup> Division of Infectious Diseases, Department of Medicine, Edison Family Center for Genome Sciences & Systems Biology, Washington University School of Medicine, St. Louis, MO, USA; <sup>2</sup> Department of Microbiology, University of Texas Southwestern Medical Center, Dallas, Texas, USA; <sup>3</sup> Department of Molecular Microbiology, Washington University School of Medicine, St. Louis, MO, USA.
+**Authors**: Somya Aggarwal<sup>1</sup>, Forrest C. Walker<sup>1</sup>, James S. Weagley<sup>1</sup>, Dylan Lawrence<sup>1</sup>, Broc T. McCune<sup>2</sup>, Xiaofen Wu<sup>1</sup>, Lawrence A. Schriefer<sup>1</sup>, Heyde Makimaa<sup>1</sup>, Pratyush Sridhar<sup>1</sup>, Megan T. Baldridge<sup>1,3</sup>.  <sup>1</sup> Division of Infectious Diseases, Department of Medicine, Edison Family Center for Genome Sciences & Systems Biology, Washington University School of Medicine, St. Louis, MO, USA; <sup>2</sup> Department of Microbiology, University of Texas Southwestern Medical Center, Dallas, Texas, USA; <sup>3</sup> Department of Molecular Microbiology, Washington University School of Medicine, St. Louis, MO, USA.
 
 ### 1. Unzip fastq file
 
@@ -23,7 +23,7 @@ ls *.fastq | sed 's/_[IR]*[12]*_001.fastq//g' | uniq > files.txt
 
 ### 3. Merge paired reads
 
-Feed merged file list into bbtools. Depending on where you have it saved, the path to the script will need to change. 
+Feed merged file list into [BBTools](https://jgi.doe.gov/data-and-tools/software-tools/bbtools/). Depending on where you have it saved, the path to the script will need to change. 
 
 ```bash
 for file in `cat files.txt`; do 
